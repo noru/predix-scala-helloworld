@@ -6,3 +6,4 @@ applications:
   host: hello-scala
   buildpack: https://github.com/heroku/heroku-buildpack-scala.git
   command: sbt run
+  random-route: true

@@ -1,9 +1,10 @@
 ---
 applications:
 - name: hello-scala
-  memory: 256M
+  disk_quota: 350M
+  memory: 512M
   instances: 1
   host: hello-scala
   buildpack: https://github.com/heroku/heroku-buildpack-scala.git
-  command: sbt run
+  command: target/universal/stage/bin/hello-scala
   random-route: true
